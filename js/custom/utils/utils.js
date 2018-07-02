@@ -29,7 +29,7 @@ ref.on('value', function(snapshot) {
 return pr;
  }
 
- function timer(idname,delay){
+ function timer(idname,delay,page,fn){
      var testTime=120;
      setInterval(()=>{
          minuteTime=parseInt((testTime/60));
@@ -37,7 +37,8 @@ return pr;
          testTime--;
          document.querySelector("#"+idname).innerHTML = `${minuteTime}:${secondTime}`;
          if( document.querySelector("#"+idname).innerHTML=="0:0"){
-            location.href="Result.html";}
+            fn();
+            location.href=page;}
      },delay);
     
  }

@@ -3,6 +3,7 @@ window.addEventListener("DOMContentLoaded",init)
 var counter;
 var index;
 var answers;
+
 var questionarr;
 function checkLogin(){
   if(sessionStorage.getItem("Userid")==null){
@@ -20,11 +21,7 @@ function init(){
     loadCircleAndQuestion();
     bindEventsAll();
     disable();
-     timer("time",1000);
-   
-
-
-}
+   }
 
 
 function printUserid(){
@@ -34,6 +31,7 @@ function printUserid(){
 
 
 function bindEventsAll(){
+  document.querySelector("#doStart").addEventListener("click",isStartTest);
 document.querySelector("#previous").addEventListener("click",previousQuestion);
 document.querySelector("#next").addEventListener("click",nextQuestion);
 document.querySelector("#finish").addEventListener("click",finishTest);
@@ -44,6 +42,10 @@ document.querySelector("#finish").addEventListener("click",finishTest);
  
 }
 
+function isStartTest(){
+  document.querySelector("#parent-doStart").style.display="none";
+  timer("time",1000,"Result.html",studentOperations.printScore);
+}
 
 
 function pushAnswers(){ 
@@ -174,6 +176,7 @@ function markTheAns(index){
     for(let i =1;i<=4;i++){
      if(checkans == document.querySelector("#Option"+i).innerHTML){
                answers[i-1].checked=true;
+               answers[i-1].style.color="blue";
      }
   }
 }}

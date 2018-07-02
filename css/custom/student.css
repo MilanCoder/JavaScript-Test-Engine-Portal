@@ -13,3 +13,13 @@
 .green{
     background-color: green;
 }
+
+.parent{
+    position:absolute;
+    z-index:2;
+    left:100px;
+    top:110px;
+    height:500px;
+    background-color:white;
+    width:85%;
+}
