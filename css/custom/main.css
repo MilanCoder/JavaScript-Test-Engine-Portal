@@ -1,0 +1,21 @@
+#register{
+margin-top:5px;
+}
+
+#login{
+margin-top:5px;
+}
+
+.hide{
+ display:none;
+}
+
+.show{
+    display:block;
+}
+
+body{
+background-image:url(https://www.colourbox.com/preview/18771562-java-programming-word-cloud-concept-7.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+}

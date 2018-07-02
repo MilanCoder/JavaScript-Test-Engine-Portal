@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel ="stylesheet" href="css/custom/student.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="js/custom/utils/utils.js"></script>
+    <script src="js/custom/model/answer.js"></script>
+    <script src="js/custom/model/studentOperation.js"></script>
+    <script src ="js/custom/controller/studentcontroller.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Test</h2><span>Welcome  </span><span id="username"></span>
+        <br>
+        <hr>
+       <div>
+        <div class="row"id="goToOption">
+         
+       </div>
+       <hr>
+       </div>
+                <div class="row">
+                  <div style="width:70%"  id ="display_questions" class="col" >
+                    
+                  </div>
+                  <div id ="time" class="col">
+                   
+                  </div>
+               </div>
+       <div id ="answer_list">
+      <div>  <input class="answers" type="radio"  name="answer" id="1"><label id ="Option1"></label></div>
+       <div> <input class="answers" type="radio"  name="answer" id="2"><label id ="Option2"></label></div>
+       <div>   <input class= "answers" type="radio"  name="answer" id="3"><label id="Option3"></label></div>
+      <div>  <input class="answers" type="radio"  name="answer" id="4"><label id="Option4"></label></div>
+    </div>
+
+    <div class="row">
+            <button id ="previous" class="col btn btn-danger function-button">
+              Previous
+            </button>
+
+            <button id ="next" class="col btn btn-success function-button">
+             Next
+            </button>
+
+            <button id ="finish" class="col btn btn-primary function-button">
+              Finish
+            </button>
+    
+    </div>
+
+</body>
+</html>

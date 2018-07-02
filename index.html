@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test</title>
+  <link rel="stylesheet" href="css/fontawesome-all.css"></script>
+  <link rel="stylesheet" href="css/custom/main.css"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script src="js/custom/utils/utils.js"></script>
+<script src="js/custom/model/user.js"></script>
+<script src="js/custom/model/userOperation.js"></script>
+<script src="js/custom/controller/usercontroller.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+        <div class="row">
+                <div class="col-sm">
+                 <button class="btn btn-primary" id="log">
+                Login
+                 </button>
+                 <h2>LOGIN AS A TEACHER OR STUDENT</h2>
+<div id="log-form" class="hide">
+                 <label for="">Userid</label>
+                <input id ="login-userid" type="text" class="form-control" placeholder="Type your userid">
+              <label for="" >Password</label>  
+              <input id="login-password" type="password"  class="form-control" placeholder="Type your password">  
+
+              <button class="btn btn-primary" id="login">
+                    Login
+                     </button> </div>
+            </div>
+                <div class="col-sm">
+                  <button class="btn btn-success" id="reg"> Register</button>
+                  <h2>REGISTER AS STUDENT</h2>
+<div id="reg-form" class="hide">
+                 <input  type ="radio" name ="radio" id="Teacher"><label for="">Teacher</label><input type ="radio" name ="radio"id= "Student"><label for="">Student</label><br>
+                  <label for="">Email ID</label><input type="email" id ="register-userid" class="form-control" placeholder="Type Your email id">
+                  <label for="">Password</label><input type="password" id="register-password" class="form-control" placeholder="Type Your Password">
+                  <label for="">Confirm Password</label><input type="password" id="confirm-password" class="form-control" placeholder="Confirm Password">
+                  <button class="btn btn-success" id ="register"> Register</button>
+                </div>
+            </div>
+               
+              </div>
+</div>
+    
+
+</body>
+</html>
