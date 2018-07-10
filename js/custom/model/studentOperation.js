@@ -11,11 +11,11 @@ const studentOperations ={
    
   
    printScore(){
-   for(let i=0;i<this.answers.length;i++)
+   for(let i=0;i<studentOperations.answers.length;i++)
    {
       
    
-           if(sessionStorage.getItem(i+1)==this.answers[i].Ans){
+           if(sessionStorage.getItem(i+1)==studentOperations.answers[i].Ans){
                
               
             sessionStorage.setItem("marks",parseInt(sessionStorage.getItem("marks"))+parseInt(score.eachvalue));

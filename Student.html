@@ -16,23 +16,25 @@
 </head>
 <body>
     <div class="container">
-        <h2>Test</h2><span>Welcome  </span><span id="username"></span>
+        <div id ="parent-doStart">
+            <div class="d-flex parent" >
+              <button  id ="doStart" class="btn btn-primary " style="margin:auto" >Start Test</button>
+            </div>
+  
+          </div>
+      <div id="test-tab">
+          
+       <div>
+          <h2>Test</h2><span>Welcome  </span><span id="username"></span>
         <br>
         <hr>
-        <div id ="parent-doStart">
-          <div class="d-flex parent" >
-            <button  id ="doStart" class="btn btn-primary " style="margin:auto" >Start Test</button>
-          </div>
-
-        </div>
-       <div>
         <div class="row"id="goToOption">
          
        </div>
        <hr>
        </div>
                 <div class="row">
-                  <div style="width:70%"  id ="display_questions" class="col" >
+                  <div id ="display_questions" class="col-md-10 col-sm-8 col-8" >
                     
                   </div>
                   <div id ="time" class="col">
@@ -40,10 +42,10 @@
                   </div>
                </div>
        <div id ="answer_list">
-      <div>  <input class="answers" type="radio"  name="answer" id="1"><label id ="Option1"></label></div>
-       <div> <input class="answers" type="radio"  name="answer" id="2"><label id ="Option2"></label></div>
-       <div>   <input class= "answers" type="radio"  name="answer" id="3"><label id="Option3"></label></div>
-      <div>  <input class="answers" type="radio"  name="answer" id="4"><label id="Option4"></label></div>
+      <div>  <input class="answer" type="radio"  name="answer" id="1"><label id ="Option1"></label></div>
+       <div> <input class="answer" type="radio"  name="answer" id="2"><label id ="Option2"></label></div>
+       <div>   <input class= "answer" type="radio"  name="answer" id="3"><label id="Option3"></label></div>
+      <div>  <input class="answer" type="radio"  name="answer" id="4"><label id="Option4"></label></div>
     </div>
 
     <div class="row">
@@ -59,6 +61,7 @@
               Finish
             </button>
     
+    </div>
     </div>
 
 </body>

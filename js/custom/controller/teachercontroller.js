@@ -28,7 +28,7 @@ function bindAllEvents(){
 }
 
 function setQuestions(){
-    
+   
      question = document.querySelector("#question").value.trim();
      option1 = document.querySelector("#Option1").value.trim();
      option2 = document.querySelector("#Option2").value.trim();
@@ -37,7 +37,7 @@ function setQuestions(){
         var ans = document.querySelector("#ans").value;
         if(question!=""||(ans!="")||(option1!=="")||(option2!="")||(option3!="")||(option4!="")){
   if(isSearch){
-    var questionObject = new Question(question,ans,sessionStorage.getItem("UpdateItem"),option1,option2,option3,option4);
+    var questionObject = new Question(question,ans,document.querySelector("#searchquestionid").value,option1,option2,option3,option4);
     var pr = teacherOperation.addQuestion(questionObject);
     pr.then((data)=>{
        
@@ -72,7 +72,7 @@ else{
             option4.value=data.Option4;
             ans.value=data.Ans;
            isSearch=true;
-           console.log(isSearch);
+           
           }).catch((err)=>{
               alert(err);
           });

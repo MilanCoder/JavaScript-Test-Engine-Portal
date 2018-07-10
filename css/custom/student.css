@@ -2,9 +2,6 @@
     margin:20px 30px 20px 30px;
 }
 
-#time{
-    padding-left:70%;
-}
 
 .red{
     background-color: red;
@@ -13,13 +10,35 @@
 .green{
     background-color: green;
 }
+#test-tab{
 
+    margin-top:110px;
+    background-color: whitesmoke;
+    padding:50px;
+    border-radius:5px;
+    display: none;
+}
 .parent{
     position:absolute;
     z-index:2;
-    left:100px;
-    top:110px;
-    height:500px;
-    background-color:white;
-    width:85%;
+    left:23%;
+    top:150px;
+    height:50%;
+    background:url(https://digitalsynopsis.com/wp-content/uploads/2016/06/loading-animations-preloader-gifs-ui-ux-effects-7.gif) no-repeat;
+    background-size:100%;
+    width:53%;
+    border-radius:5px;
+
+    
 }
+
+#display_questions{
+    padding-bottom: 5px;
+}
+    body{
+        background:url(https://images.alphacoders.com/665/665091.jpg);
+          background-repeat: no-repeat;
+      background-size: 100%;
+      
+      }
+      

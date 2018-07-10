@@ -2,7 +2,7 @@ checkLogin();
 window.addEventListener("DOMContentLoaded",init)
 var counter;
 var index;
-var answers;
+var answer;
 
 var questionarr;
 function checkLogin(){
@@ -35,15 +35,16 @@ function bindEventsAll(){
 document.querySelector("#previous").addEventListener("click",previousQuestion);
 document.querySelector("#next").addEventListener("click",nextQuestion);
 document.querySelector("#finish").addEventListener("click",finishTest);
-  answers = document.getElementsByClassName("answers")
- for( let i=0;i<answers.length;i++){
-       answers[i].addEventListener("click",pushAnswers);
+  answer = document.getElementsByClassName("answer")
+ for( let i=0;i<answer.length;i++){
+       answer[i].addEventListener("click",pushAnswers);
  }
  
 }
 
 function isStartTest(){
   document.querySelector("#parent-doStart").style.display="none";
+  document.querySelector("#test-tab").style.display="block";
   timer("time",1000,"Result.html",studentOperations.printScore);
 }
 
@@ -167,16 +168,16 @@ function printQuestionAndOptions(question,index){
 
 function markTheAns(index){
   if(sessionStorage.getItem(index+1)===null){
-    for( let i=0;i<answers.length;i++){
-      answers[i].checked=false;
+    for( let i=0;i<answer.length;i++){
+      answer[i].checked=false;
 }}
   else
   {
      var checkans = sessionStorage.getItem(index+1);
     for(let i =1;i<=4;i++){
      if(checkans == document.querySelector("#Option"+i).innerHTML){
-               answers[i-1].checked=true;
-               answers[i-1].style.color="blue";
+               answer[i-1].checked=true;
+              
      }
   }
 }}

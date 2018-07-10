@@ -19,37 +19,47 @@
 <body>
 
 <div class="container">
-        <div class="row">
-                <div class="col-sm">
+    <video autoplay muted loop id="myVideo">
+        <source src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/Vjkyj2hBg/animation-of-graphic-elements-with-sand-clock-symbol-on-dark-blue-background_sxxzxn7z__SB_PM.mp4" type="video/mp4">
+      </video>
+  <div class="test-tab">
+      <div class="tab-adjust">
+       <div class="row tabs">
+                <div class="col-4">
                  <button class="btn btn-primary" id="log">
                 Login
                  </button>
-                 <h2>LOGIN AS A TEACHER OR STUDENT</h2>
-<div id="log-form" class="hide">
-                 <label for="">Userid</label>
-                <input id ="login-userid" type="text" class="form-control" placeholder="Type your userid">
-              <label for="" >Password</label>  
-              <input id="login-password" type="password"  class="form-control" placeholder="Type your password">  
-
-              <button class="btn btn-primary" id="login">
-                    Login
-                     </button> </div>
+                 
+    
             </div>
-                <div class="col-sm">
+                <div class="col">
                   <button class="btn btn-success" id="reg"> Register</button>
-                  <h2>REGISTER AS STUDENT</h2>
-<div id="reg-form" class="hide">
-                 <input  type ="radio" name ="radio" id="Teacher"><label for="">Teacher</label><input type ="radio" name ="radio"id= "Student"><label for="">Student</label><br>
-                  <label for="">Email ID</label><input type="email" id ="register-userid" class="form-control" placeholder="Type Your email id">
-                  <label for="">Password</label><input type="password" id="register-password" class="form-control" placeholder="Type Your Password">
-                  <label for="">Confirm Password</label><input type="password" id="confirm-password" class="form-control" placeholder="Confirm Password">
-                  <button class="btn btn-success" id ="register"> Register</button>
-                </div>
+                 
+
             </div>
                
               </div>
-</div>
-    
+              <div id="view">
+                  <div id="log-form" class="show">
+                      <label for="">Userid</label>
+                     <input id ="login-userid" type="text" class="form-control" placeholder="Type your userid">
+                   <label for="" >Password</label>  
+                   <input id="login-password" type="password"  class="form-control" placeholder="Type your password">  
+     
+                   <button class="btn btn-primary" id="login">
+                         Login
+                          </button> </div>
+                          <div id="reg-form" class="hide">
+                              <input  type ="radio" name ="radio" id="Teacher"><label for="">Teacher</label><input type ="radio" name ="radio"id= "Student"><label for="">Student</label><br>
+                               <label for="">Email ID</label><input type="email" id ="register-userid" class="form-control" placeholder="Type Your email id">
+                               <label for="">Password</label><input type="password" id="register-password" class="form-control" placeholder="Type Your Password">
+                               <label for="">Confirm Password</label><input type="password" id="confirm-password" class="form-control" placeholder="Confirm Password">
+                               <button class="btn btn-success" id ="register"> Register</button>
+                            </div>
+              </div>
+            </div>
+          </div>
+    </div>
 
 </body>
 </html>

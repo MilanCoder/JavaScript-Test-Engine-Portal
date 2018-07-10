@@ -10,6 +10,7 @@ var passwordobj;
 
 
 function init(){
+   
     loginObj = document.querySelector("#login-userid");
     regObj= document.querySelector("#register-userid");
     passwordObj =document.querySelector("#login-password");
@@ -40,7 +41,10 @@ function checkFill(){
 }
 function show(){
    var id = event.target.id;
-    isShow = true;
+  var btns = document.getElementsByClassName("show");
+  for( let btn=0;btn<btns.length;btn++){
+  btns[btn].className="hide";  }
+  isShow = true;
     showHide(id);
 }
 function showHide(id){
@@ -68,11 +72,14 @@ function login(){
                
             location.href="Student.html";
            }
-           else{
-             alert("No Match Found");
-           }
-           }
+         
+        }
+        else{
+            alert("Incorrect Password");
+        }  
           
+      }).catch(()=>{
+          alert("No match found");
       })
        
 
